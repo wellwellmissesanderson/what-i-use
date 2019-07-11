@@ -10,16 +10,23 @@ module.exports = {
     fontWeight: 'normal',
     fontWeightBold: 'bold',
     cursorColor: 'rgba(248,28,229,0.8)',
-    cursorAccentColor: '#000',
     cursorShape: 'BLOCK',
-    cursorBlink: false,
-    foregroundColor: '#fff',
-    backgroundColor: '#000',
-    selectionColor: 'rgba(248,28,229,0.3)',
-    borderColor: '#333',
-    padding: '12px 14px',
-    wickedBorder: true,
-    wickedBorderColor: '#ffc600'
+    // padding: '12px 14px',
+    summon: {
+      hideDock: false,
+      hideOnBlur: false,
+      hotkey: 'Control+H',
+    }
   },
-  plugins: ["hyper-corubo", "hyperpower", "hyper-pane", "hyper-search"]
+  plugins: [
+    "hyperpower",
+    "hyper-pane",
+    "hyper-search",
+    "gitrocket",
+    "hyperline",
+    "hypercwd",
+    "hyperterm-summon",
+    "hyper-statusline",
+    "hyperborder"
+  ]
 };
