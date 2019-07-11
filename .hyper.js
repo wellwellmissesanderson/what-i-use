@@ -1,23 +1,25 @@
+// These are my overwrites
+// See https://hyper.is#cfg for all currently supported options.
+
 module.exports = {
-  updateChannel: 'canary',
   config: {
-    // default font size in pixels for all tabs
-    fontSize: 20,
-    windowSize: [1080, 720],
-    fontFamily: '"Operator Mono", "Inconsolata for Powerline", monospace',
+    updateChannel: 'stable',
+    fontSize: 18,
+    // I use Skyfonts locally for non-standard fonts
+    fontFamily: '"Inconsolata", Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontWeight: 'normal',
+    fontWeightBold: 'bold',
+    cursorColor: 'rgba(248,28,229,0.8)',
+    cursorAccentColor: '#000',
     cursorShape: 'BLOCK',
+    cursorBlink: false,
+    foregroundColor: '#fff',
+    backgroundColor: '#000',
+    selectionColor: 'rgba(248,28,229,0.3)',
+    borderColor: '#333',
+    padding: '12px 14px',
     wickedBorder: true,
-    padding: '10px',
-    shell: '/bin/zsh'
+    wickedBorderColor: '#ffc600'
   },
-
-
-  plugins: [
-    'hyperterm-cobalt2-theme',
-  ],
-
-  // in development, you can create a directory under
-  // `~/.hyperterm_plugins/local/` and include it here
-  // to load it and avoid it being `npm install`ed
-  // localPlugins: ['hyperterm-cobalt2-theme'],
+  plugins: ["hyper-corubo", "hyperpower", "hyper-pane", "hyper-search"]
 };
