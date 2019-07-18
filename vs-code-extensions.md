@@ -11,7 +11,10 @@ Here is the list of extensions I use. I have a list of extensions I'm exploring 
 * [Rainbow CSV](https://marketplace.visualstudio.com/items?itemName=mechatroner.rainbow-csv)
 * [Toggle Quotes](https://marketplace.visualstudio.com/items?itemName=BriteSnow.vscode-toggle-quotes)
 * [vscode-styled-components](https://marketplace.visualstudio.com/items?itemName=jpoissonnier.vscode-styled-components)
-* [VS Color Pocker](https://marketplace.visualstudio.com/items?itemName=lihui.vs-color-picker)
+* [VS Color Picker](https://marketplace.visualstudio.com/items?itemName=lihui.vs-color-picker)
+* [Twig](https://marketplace.visualstudio.com/items?itemName=whatwedo.twig)
+* [ES7 React/Redux/GraphQL/React-Native snippets](https://marketplace.visualstudio.com/items?itemName=dsznajder.es7-react-js-snippets)
+* [Babel JavaScript](https://marketplace.visualstudio.com/items?itemName=mgmcdermott.vscode-language-babel)
 
 Haven't used yet
 
