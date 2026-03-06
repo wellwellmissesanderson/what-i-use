@@ -1,0 +1,145 @@
+{
+	"folders": [
+		{
+			"path": "<secrets>"
+		}
+	],
+	"settings": {
+		"workbench.colorTheme": "Cobalt2",
+		"workbench.colorCustomizations": {
+			"titleBar.activeBackground": "#00cccc",
+			"titleBar.activeForeground": "#000000",
+			"titleBar.inactiveBackground": "#811519",
+			"titleBar.inactiveForeground": "#cccccc",
+			"[Cobalt2]": {
+				"statusBar.foreground": "#fff",
+				"statusBar.background": "#016b6b",
+				"tab.activeBorder": "#00cccc",
+			}
+		},
+		"workbench.editor.pinnedTabSizing": "compact",
+		"editor.codeActionsOnSave": {
+			"source.fixAll.eslint": "explicit"
+		},
+		// "editor.formatOnSave": true,
+		"eslint.validate": [
+			"javascript",
+			"typescript",
+			"javascriptreact",
+			"typescriptreact"
+		],
+		"search.useIgnoreFiles": false,
+		"jest.runMode": "on-demand",
+		// uncomment to search node_modules
+		// "search.exclude": {
+		// 	"**/node_modules/**": false,
+		// },
+		// Use this to change directory used when running tests from sidebar
+		// "jest.jestCommandLine": "yarn test:rtl",
+		// "jest.jestCommandLine": "yarn test:schedule:vitest",
+		// "jest.jestCommandLine": "yarn test:callback-service",
+		"jest.virtualFolders": [
+			{
+				"jestCommandLine": "yarn test:rtl",
+				"name": "tests-rtl",
+			},
+			{
+				"jestCommandLine": "yarn test:rtl-lax",
+				"name": "tests-rtl-lax",
+			},
+			{
+				"jestCommandLine": "yarn test",
+				"name": "tests",
+			},
+			{
+				"jestCommandLine": "yarn test:tv",
+				"name": "tv",
+			},
+			{
+				"jestCommandLine": "yarn test:callback-service",
+				"name": "callback-service",
+			},
+			{
+				"jestCommandLine": "yarn test:frontend",
+				"name": "frontend",
+			},
+			{
+				"jestCommandLine": "yarn test:schedule",
+				"name": "schedule",
+			},
+			{
+				"jestCommandLine": "yarn test:role-based-access-control",
+				"name": "role-based-access-control",
+			},
+			{
+				"jestCommandLine": "yarn test:branch-locator",
+				"name": "branch-locator",
+			},
+			{
+				"jestCommandLine": "yarn test:check-in",
+				"name": "check-in",
+			},
+			{
+				"jestCommandLine": "yarn test:shared",
+				"name": "shared",
+			},
+			{
+				"jestCommandLine": "yarn test:microsoft-dynamics",
+				"name": "microsoft-dynamics",
+			},
+			{
+				"jestCommandLine": "yarn test:frontend:vitest",
+				"name": "frontend",
+			},
+		],
+		"files.refactoring.autoSave": false,
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"name": "Xdebug",
+				"type": "php",
+				"request": "launch",
+				"port": 9003,
+				"pathMappings": {
+					"/var/www/html": "${workspaceRoot}"
+				}
+			},
+			{
+				"name": "Launch currently open script",
+				"type": "php",
+				"request": "launch",
+				"program": "${file}",
+				"cwd": "${fileDirname}",
+				"port": 0,
+				"runtimeArgs": [
+					"-dxdebug.start_with_request=yes"
+				],
+				"env": {
+					"XDEBUG_MODE": "debug,develop",
+					"XDEBUG_CONFIG": "client_port=${port}"
+				}
+			},
+			{
+				"name": "Launch Built-in web server",
+				"type": "php",
+				"request": "launch",
+				"runtimeArgs": [
+					"-dxdebug.mode=debug",
+					"-dxdebug.start_with_request=yes",
+					"-S",
+					"localhost:0"
+				],
+				"program": "",
+				"cwd": "${workspaceRoot}",
+				"port": 9003,
+				"serverReadyAction": {
+					"pattern": "Development Server \\(http://localhost:([0-9]+)\\) started",
+					"uriFormat": "http://localhost:%s",
+					"action": "openExternally"
+				}
+			}
+		]
+	}
+}

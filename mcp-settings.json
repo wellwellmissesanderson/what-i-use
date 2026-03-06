@@ -1,0 +1,45 @@
+{
+  "mcpServers": {
+    "context7-axe-core": {
+      "command": "npx",
+      "args": [
+        "@upstash/context7-mcp",
+        "--transport",
+        "stdio"
+      ],
+      "env": {
+        "CONTEXT7_API_KEY": "",
+        "CONTEXT7_REPOSITORY": "dequelabs/axe-core"
+      }
+    },
+    "context7-wcag": {
+      "command": "npx",
+      "args": [
+        "@upstash/context7-mcp",
+        "--transport",
+        "stdio"
+      ],
+      "env": {
+        "CONTEXT7_API_KEY": "",
+        "CONTEXT7_REPOSITORY": "websites/w3c_github_io-wcag"
+      }
+    },
+    "context7-aria-practices": {
+      "command": "npx",
+      "args": [
+        "@upstash/context7-mcp",
+        "--transport",
+        "stdio"
+      ],
+      "env": {
+        "CONTEXT7_API_KEY": "",
+        "CONTEXT7_REPOSITORY": "w3c/aria-practices"
+      }
+    },
+    "chrome-devtools": {
+      "command": "/Users/heatheranderson/.palm/versions/node/v20.14.0/bin/chrome-devtools-mcp",
+      "args": [],
+      "env": {}
+    }
+  }
+}

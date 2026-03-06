@@ -1,12 +1,30 @@
 {
-	"folders": [
-	],
-	"settings": {
-		"workbench.colorCustomizations": {
-			"titleBar.activeForeground": "#000",
-			"titleBar.inactiveForeground": "#000000CC",
-			"titleBar.activeBackground": "#FFC600",
-			"titleBar.inactiveBackground": "#FFC600CC"
-		}
-	}
+  "folders": [
+      {
+          "path": "ui-components"
+      }
+  ],
+  "settings": {
+      "workbench.colorTheme": "Monokai",
+      "workbench.colorCustomizations": {
+          "titleBar.activeBackground": "#f0e109",
+          "titleBar.activeForeground": "#000000",
+          "titleBar.inactiveBackground": "#811519",
+          "titleBar.inactiveForeground": "#cccccc",
+          "[Cobalt2]": {
+              "statusBar.foreground": "#fff",
+              "statusBar.background": "#a58c00",
+              "tab.activeBorder": "#f0e109",
+          }
+      },
+      "workbench.editor.pinnedTabSizing": "compact",
+      "search.exclude": {
+          "**/node_modules": true,
+          // "**/node_modules": false,
+      },
+      "editor.formatOnSave": true,
+      "editor.codeActionsOnSave": {
+          "source.fixAll.eslint": "explicit"
+      },
+  },
 }
